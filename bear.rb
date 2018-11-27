@@ -11,9 +11,7 @@ attr_reader :name, :type
   end
 
   def eat(fish)
-    fish_in_river = [fish]
     @stomach << fish
-    fish_in_river.pop
   end
 
   def tummy_content
