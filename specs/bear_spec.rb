@@ -8,7 +8,7 @@ class BearTest < MiniTest::Test
 
   def setup
     @bear = Bear.new("Yogi","Grizzly")
-    @type = Bear.new("Yogi","Grizzly")
+  
   end
 
   def test_bear_has_name
@@ -16,7 +16,7 @@ class BearTest < MiniTest::Test
   end
 
   def test_bear_type
-    assert_equal("Grizzly", @type.type)
+    assert_equal("Grizzly", @bear.type)
   end
 
 
