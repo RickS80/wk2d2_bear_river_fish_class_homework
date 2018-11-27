@@ -5,12 +5,20 @@ attr_reader :name, :type
   def initialize(name, type)
     @name = name
     @type = type
-    @tummy_content = []
+    @stomach = []
 
   end
 
+  def eat(fish)
+    @stomach << fish
+  end
+
+  def tummy_content
+    return @stomach.length
+  end
+
   def roar
-    returns "roar"
-  end 
+    return "roar"
+  end
 
 end
